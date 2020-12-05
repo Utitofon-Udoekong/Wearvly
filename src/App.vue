@@ -7,7 +7,7 @@
           <div class>
             <!-- logo -->
             <div class="logo">Wearvly</div>
-            <div class="averages" v-if="!cityfound">
+            <div class="averages">
               <!-- low-temp -->
               <p>
                 <img src="./assets/down.svg" alt />
@@ -20,7 +20,7 @@
                 {{ weather.highTemp }}&deg;C
               </p>
             </div>
-            <div class="temperal-info" v-if="!cityfound">
+            <div class="temperal-info">
               <!-- main-temp -->
               <h1>{{ weather.temperature }}&deg;C</h1>
               <div class="location">
@@ -89,7 +89,7 @@
         <div class="col-md-8 weather-page">
           <div class>
             <div class="logo">Wearvly</div>
-            <div class="averages" v-if="!cityfound">
+            <div class="averages">
               <!-- min-temp -->
               <p>
                 <img src="./assets/down.svg" alt />
@@ -102,7 +102,7 @@
                 {{ weather.highTemp }}&deg;C
               </p>
             </div>
-            <div class="temperal-info" v-if="!cityfound">
+            <div class="temperal-info">
               <!-- main-temp -->
               <h1>{{ weather.temperature }}&deg;C</h1>
               <div class="location">
@@ -171,7 +171,7 @@
         <div class="col-md-8 weather-page">
           <div class>
             <div class="logo">Wearvly</div>
-            <div class="averages" v-if="!cityfound">
+            <div class="averages">
               <!-- min-temp -->
               <p>
                 <img src="./assets/down.svg" alt />
@@ -184,7 +184,7 @@
                 {{ weather.highTemp }}&deg;C
               </p>
             </div>
-            <div class="temperal-info" v-if="!cityfound">
+            <div class="temperal-info">
               <!-- main-temp -->
               <h1>{{ weather.temperature }}&deg;C</h1>
               <div class="location">
@@ -253,7 +253,7 @@
         <div class="col-md-8 weather-page">
           <div class>
             <div class="logo">Wearvly</div>
-            <div class="averages" v-if="!cityfound">
+            <div class="averages">
               <!-- min-temp -->
               <p>
                 <img src="./assets/down.svg" alt />
@@ -266,7 +266,7 @@
                 {{ weather.highTemp }}&deg;C
               </p>
             </div>
-            <div class="temperal-info" v-if="!cityfound">
+            <div class="temperal-info">
               <!-- main-temp -->
               <h1>{{ weather.temperature }}&deg;C</h1>
               <div class="location">
@@ -335,7 +335,7 @@
         <div class="col-md-8 weather-page">
           <div>
             <div class="logo">Wearvly</div>
-            <div class="averages" v-if="!cityFound">
+            <div class="averages">
               <!-- min-temp -->
               <p>
                 <img src="./assets/down.svg" alt />
@@ -348,7 +348,7 @@
                 {{ weather.highTemp }}&deg;C
               </p>
             </div>
-            <div class="temperal-info" v-if="!cityFound">
+            <div class="temperal-info">
               <!-- main-temp -->
               <h1>{{ weather.temperature }}&deg;C</h1>
               <div class="location">
@@ -417,7 +417,7 @@
         <div class="col-md-8 weather-page">
           <div class>
             <div class="logo">Wearvly</div>
-            <div class="averages" v-if="!cityfound">
+            <div class="averages">
               <!-- min-temp -->
               <p>
                 <img src="./assets/down.svg" alt />
@@ -430,7 +430,7 @@
                 {{ weather.highTemp }}&deg;C
               </p>
             </div>
-            <div class="temperal-info" v-if="!cityfound">
+            <div class="temperal-info">
               <!-- main-temp -->
               <h1>{{ weather.temperature }}&deg;C</h1>
               <div class="location">
