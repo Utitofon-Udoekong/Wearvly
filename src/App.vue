@@ -609,7 +609,7 @@ export default {
           this.rainy = false;
         }
 
-        this.cityFound = false;
+        this.cityFound = true;
       } catch (error) {
         console.log(error);
         this.cityFound = true;
