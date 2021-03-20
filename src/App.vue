@@ -47,7 +47,7 @@
                     v-model="citySearch"
                     autocomplete="off"
                   />
-                  <p class="text-center my-3" v-if="cityFound">No city found</p>
+                  <p class="text-center my-3" v-if="!cityFound">No city found</p>
                 </form>
               </div>
               <div class="searchedCities">
@@ -128,7 +128,7 @@
                     v-model="citySearch"
                     autocomplete="off"
                   />
-                  <p class="text-center my-3" v-if="cityFound">No city found</p>
+                  <p class="text-center my-3" v-if="!cityFound">No city found</p>
                 </form>
               </div>
               <div class="searchedCities">
@@ -210,7 +210,7 @@
                     v-model="citySearch"
                     autocomplete="off"
                   />
-                  <p class="text-center my-3" v-if="cityFound">No city found</p>
+                  <p class="text-center my-3" v-if="!cityFound">No city found</p>
                 </form>
               </div>
               <div class="searchedCities">
@@ -292,7 +292,7 @@
                     v-model="citySearch"
                     autocomplete="off"
                   />
-                  <p class="text-center my-3" v-if="cityFound">No city found</p>
+                  <p class="text-center my-3" v-if="!cityFound">No city found</p>
                 </form>
               </div>
               <div class="searchedCities">
@@ -374,7 +374,7 @@
                     v-model="citySearch"
                     autocomplete="off"
                   />
-                  <p class="text-center my-3" v-if="cityFound">No city found</p>
+                  <p class="text-center my-3" v-if="!cityFound">No city found</p>
                 </form>
               </div>
               <div class="searchedCities">
@@ -417,7 +417,7 @@
         <div class="col-md-8 weather-page">
           <div class>
             <div class="logo">Wearvly</div>
-            <div class="averages" v-if="cityFound">
+            <div class="averages" v-if="!cityFound">
               <!-- min-temp -->
               <p>
                 <img src="./assets/down.svg" alt />
@@ -456,7 +456,7 @@
                     v-model="citySearch"
                     autocomplete="off"
                   />
-                  <p class="text-center my-3" v-if="cityFound">No city found</p>
+                  <p class="text-center my-3" v-if="!cityFound">No city found</p>
                 </form>
               </div>
               <div class="searchedCities">
@@ -609,10 +609,10 @@ export default {
           this.rainy = false;
         }
 
-        this.cityFound = false;
+        this.cityFound = true;
       } catch (error) {
         console.log(error);
-        this.cityFound = true;
+        this.cityFound = false;
       }
     }
   }
